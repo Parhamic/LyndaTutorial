@@ -61,7 +61,7 @@ a{
   width : 82%;
   height : 500px;
   margin : 0px auto;
-  border : 2px solid black;
+  border : 1px solid black;
 }
 .clear{
   clear: both;

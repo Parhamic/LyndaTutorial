@@ -47,7 +47,6 @@ def register_view(request):
             else:
                 usr = User.objects.create_user(cd['username'], cd['email'], cd['password'])
                 prof = Profile.objects.create(user=usr, age=cd['age'])
-                prof.save()
                 login(request, usr)
                 return redirect('dashboard')
     else:
